@@ -89,6 +89,7 @@ alias gsta='git stash apply'
 alias gstl='git stash list'
 alias gstp='git stash pop'
 alias gstd='git stash drop'
+alias gsu='git submodule update'
 alias gmfm='gcom && gf && gpl && gco - && gmm'
 alias gfpl='gf && gpl'
 
