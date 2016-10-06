@@ -50,6 +50,7 @@ function glf() { git log --all --grep="$1"; }
 # ----------------------
 # Aliases
 # ----------------------
+alias cpb='echo $(current_branch) | tr -d "\n" | pbcopy'
 alias ga='git add .'
 alias gaaa='git add -A'
 alias gb='git branch'
