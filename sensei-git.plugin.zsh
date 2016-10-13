@@ -71,8 +71,10 @@ alias gg='git grep -n'
 alias ggg='git grep -C2 -n --heading --show-function'
 alias gi='git init'
 alias gl='git log'
-alias gll="git log -5 --pretty=format:\"%ad | %an => '%s' (%h) \" --date=relative | cat"
-alias gllh="git log -5 --pretty=format:\"%ad | %H '%s'\" --date=relative | cat"
+alias gll="git log -5 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
+alias gllh="git log -5 --pretty=format:\"%ad | %H => '%s'\" --date=short | cat"
+alias glll="git log -10 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
+alias glllh="git log -10 --pretty=format:\"%ad | %H => '%s'\" --date=short | cat"
 alias glg='git log --graph --oneline --decorate --all'
 alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
 alias gm='git merge --no-ff'
