@@ -47,6 +47,22 @@ function last_commit() {
 # Git log find by commit message
 function glf() { git log --all --grep="$1"; }
 
+function ggjs() {
+  echo "git grep -n $1 -- '*.js'" | zsh
+}
+
+function ggcss() {
+  echo "git grep -n $1 -- '*.css'" | zsh
+}
+
+function gggjs() {
+  echo "git grep -C2 -n --heading --show-function $1 -- '*.js'" | zsh
+}
+
+function gggcss() {
+  echo "git grep -C2 -n --heading --show-function $1 -- '*.css'" | zsh
+}
+
 # ----------------------
 # Aliases
 # ----------------------
@@ -88,6 +104,7 @@ alias gr='git reset'
 alias gra='git rebase --abort'
 alias grc='git rebase --continue'
 alias grim='git rebase -i master'
+alias gris='git rebase -i --autosquash'
 alias grims='git rebase -i --autosquash master'
 alias grv='git remote -v | grep push'
 alias gs='git status'
