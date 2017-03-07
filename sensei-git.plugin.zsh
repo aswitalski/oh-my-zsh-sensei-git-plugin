@@ -88,10 +88,14 @@ alias gg='git grep -n'
 alias ggg='git grep -C2 -n --heading --show-function'
 alias gi='git init'
 alias gl='git log'
-alias gll="git log -5 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
-alias gllh="git log -5 --pretty=format:\"%ad | %H => '%s'\" --date=short | cat"
-alias glll="git log -10 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
-alias glllh="git log -10 --pretty=format:\"%ad | %H => '%s'\" --date=short | cat"
+alias gll="git log -4 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
+alias gllh="git log -4 --pretty=format:\"%ad | %H => '%s'\" --date=short | cat"
+alias glll="git log -8 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
+alias glllh="git log -8 --pretty=format:\"%ad | %H => '%s'\" --date=short | cat"
+alias gllll="git log -16 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
+alias gllllh="git log -16 --pretty=format:\"%ad | %H => '%s'\" --date=short | cat"
+alias glllll="git log -32 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
+alias glllllh="git log -32 --pretty=format:\"%ad | %H => '%s'\" --date=short | cat"
 alias glg='git log --graph --oneline --decorate --all'
 alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
 alias gm='git merge --no-ff'
@@ -101,6 +105,7 @@ alias gpls='git pull && git submodule update'
 alias gps='git push'
 alias gpsf='git push --force'
 alias gpsn='git push --set-upstream origin $(current_branch)'
+alias gpst='git push --tags'
 alias gr='git reset'
 alias gra='git rebase --abort'
 alias grc='git rebase --continue'
