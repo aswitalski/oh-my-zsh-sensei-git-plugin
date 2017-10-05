@@ -67,7 +67,8 @@ function gggcss() {
 # Aliases
 # ----------------------
 alias cpb='echo $(current_branch) | tr -d "\n" | pbcopy'
-alias ga='git add .'
+alias ga='git add'
+alias gaa='git add .'
 alias gaaa='git add -A'
 alias gb='git branch'
 alias gbd='git branch -d '
