@@ -89,6 +89,7 @@ alias ggg='git grep -C2 -n --heading --show-function'
 alias gi='git init'
 alias gl='git log'
 alias gll="git log -4 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
+alias glla="git log -10000 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
 alias gllh="git log -4 --pretty=format:\"%ad | %H => '%s'\" --date=short | cat"
 alias glll="git log -8 --pretty=format:\"%ad | %an => '%s' (%h)\" --date=relative | cat"
 alias glllh="git log -8 --pretty=format:\"%ad | %H => '%s'\" --date=short | cat"
