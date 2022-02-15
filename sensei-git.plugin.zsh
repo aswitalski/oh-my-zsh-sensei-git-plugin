@@ -63,6 +63,10 @@ function gggcss() {
   echo "git grep -C2 -n --heading --show-function $1 -- '*.css'" | zsh
 }
 
+function gtd() {
+  echo "git tag -d $1 && git push --delete origin $1" | zsh
+}
+
 # ----------------------
 # Aliases
 # ----------------------
