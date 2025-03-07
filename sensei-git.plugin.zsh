@@ -142,5 +142,5 @@ alias gfpl='gf && gpl'
 
 # Aliases requiring confirmation
 alias gca='read REPLY\?"Are you sure you want to amend your last commit? "; if [[ $REPLY =~ ^[Yy]$ ]] git commit --amend'
-alias grh='read REPLY\?"Are you sure you want to reset your uncommitted changes? "; if [[ $REPLY =~ ^[Yy]$ ]] git reset --hard'
+alias grh='read REPLY\?"Are you sure you want to reset your uncommitted changes? "; if [[ $REPLY =~ ^[Yy]$ ]] git clean -fd && git reset --hard'
 alias gpsf='read REPLY\?"Are you sure you want to forcibly push your branch? "; if [[ $REPLY =~ ^[Yy]$ ]] git push --force'
